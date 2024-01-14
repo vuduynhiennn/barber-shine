@@ -9,7 +9,7 @@ export default function LandingLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Wrapper className="bg-red-400">
+    <Wrapper>
       <Header />
       {children}
       <Footer />

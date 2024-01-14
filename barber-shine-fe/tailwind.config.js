@@ -51,6 +51,10 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'dark-300': "#262626",
+        'primary': "#15397f",
+        'primary-lighter': '#a0c9eb',
+        'light': "#fff"
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -71,16 +75,23 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-    },
-    screens: {
-      // => @media (min-width: px) { ... }
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'landing-page': '1200px',
-      'xl': '1280px',
-      '2xl': '1536px',
-    }
+      padding: {
+        "0.5": "2px",
+        "1.5": "5px"
+      },
+      screens: {
+        // => @media (min-width: px) { ... }
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'landing-page': '1200px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      }
+      },
+      gap: {
+        "7.5": "30px"
+      },
   },
   plugins: [require("tailwindcss-animate")],
 }
