@@ -53,6 +53,7 @@ module.exports = {
         },
         'dark-300': "#262626",
         'primary': "#15397f",
+        'primary-lighter': '#a0c9eb',
         'light': "#fff"
       },
       borderRadius: {
