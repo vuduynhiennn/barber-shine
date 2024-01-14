@@ -54,7 +54,8 @@ module.exports = {
         'dark-300': "#262626",
         'primary': "#15397f",
         'primary-lighter': '#a0c9eb',
-        'light': "#fff"
+        'light': "#fff",
+        'dark-100': '#f7f7f7'
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -87,11 +88,14 @@ module.exports = {
         'landing-page': '1200px',
         'xl': '1280px',
         '2xl': '1536px',
-      }
       },
       gap: {
         "7.5": "30px"
       },
+      margin: {
+        '2.5': '10px'
+      }
+    },
   },
   plugins: [require("tailwindcss-animate")],
 }

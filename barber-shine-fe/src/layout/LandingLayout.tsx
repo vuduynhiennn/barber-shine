@@ -1,12 +1,12 @@
-import Footer from "@/components/landing-page/footer";
-import Header from "@/components/landing-page/header";
-import React from "react";
-import Wrapper from "./Wrapper";
+import Footer from '@/components/landing-page/footer'
+import Header from '@/components/landing-page/header'
+import React from 'react'
+import Wrapper from './Wrapper'
 
 export default function LandingLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <Wrapper>
@@ -14,5 +14,5 @@ export default function LandingLayout({
       {children}
       <Footer />
     </Wrapper>
-  );
+  )
 }
