@@ -25,6 +25,6 @@ export const SOCIAL_CONFIG = [
   {
     icon: <TikTokIcon className="fill-dark-300" />,
     label: '1409 follow',
-    href: 'https://facebook.com',
+    href: 'https:/tiktok.com',
   },
 ]
