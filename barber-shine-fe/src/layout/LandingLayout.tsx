@@ -11,7 +11,7 @@ export default function LandingLayout({
   return (
     <div>
       <Header />
-      <Wrapper>{children}</Wrapper>
+      {children}
       <Footer />
     </div>
   )
