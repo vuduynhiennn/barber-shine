@@ -15,7 +15,7 @@ export default function Header() {
   const toggleShowMenu = () => setIsShowMenu((pre) => !pre)
 
   return (
-    <div className="shadow">
+    <div className="shadow border border-b z-50">
       <Wrapper className="flex  h-14 py-1.5 justify-between items-center">
         <Logo />
 
@@ -50,7 +50,7 @@ const HeaderMenu = ({
   return (
     <ul
       className={cn(
-        'flex fixed px-4  transition-all top-0 pt-4 md:pt-0 duration-300 bg-light z-10 flex-col md:flex-row md:relative items-center gap-7.5',
+        'flex fixed px-4  h-screen md:h-0  transition-all top-0 pt-4 md:pt-0 duration-300 bg-light z-10 flex-col md:flex-row md:relative items-center gap-7.5',
         isShowMenu ? 'right-0 w-full items-start' : '-right-48 md:right-0'
       )}
     >
