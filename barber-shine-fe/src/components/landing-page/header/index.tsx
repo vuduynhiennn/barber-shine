@@ -8,29 +8,32 @@ import { cn } from '@/lib/utils'
 import BarsSortRegularIcon from '@/icons/bars-sort-regular.svg'
 import XMarkRegularIcon from '@/icons/xmark-regular.svg'
 import Logo from './Logo'
+import Wrapper from '@/layout/Wrapper'
 
 export default function Header() {
   const [isShowMenu, setIsShowMenu] = useState(false)
   const toggleShowMenu = () => setIsShowMenu((pre) => !pre)
 
   return (
-    <div className="flex  h-14 py-1.5 justify-between items-center">
-      <Logo />
+    <div className="shadow">
+      <Wrapper className="flex  h-14 py-1.5 justify-between items-center">
+        <Logo />
 
-      <HeaderMenu isShowMenu={isShowMenu} toggleShowMenu={toggleShowMenu} />
+        <HeaderMenu isShowMenu={isShowMenu} toggleShowMenu={toggleShowMenu} />
 
-      <div className="flex items-center">
-        <Button
-          variant="outline"
-          className="text-primary px-3 leading-none rounded-lg border-primary hover:bg-primary hover:text-light h-6 py-0.5"
-        >
-          <Link href={'/auth/login'}>Đăng nhập</Link>
-        </Button>
-        <BarsSortRegularIcon
-          className="w-5 md:hidden cursor-pointer h-5  ml-2.5"
-          onClick={toggleShowMenu}
-        />
-      </div>
+        <div className="flex items-center">
+          <Button
+            variant="outline"
+            className="text-primary px-3 leading-none rounded-lg border-primary hover:bg-primary hover:text-light h-6 py-0.5"
+          >
+            <Link href={'/auth/login'}>Đăng nhập</Link>
+          </Button>
+          <BarsSortRegularIcon
+            className="w-5 md:hidden cursor-pointer h-5  ml-2.5"
+            onClick={toggleShowMenu}
+          />
+        </div>
+      </Wrapper>
     </div>
   )
 }
@@ -47,7 +50,7 @@ const HeaderMenu = ({
   return (
     <ul
       className={cn(
-        'flex fixed px-4 transition-all top-0 pt-4 md:pt-0 duration-300 bg-light z-10 flex-col md:flex-row md:relative items-center gap-7.5',
+        'flex fixed px-4  transition-all top-0 pt-4 md:pt-0 duration-300 bg-light z-10 flex-col md:flex-row md:relative items-center gap-7.5',
         isShowMenu ? 'right-0 w-full items-start' : '-right-48 md:right-0'
       )}
     >

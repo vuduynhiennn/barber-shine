@@ -10,10 +10,8 @@ export default function LandingLayout({
 }) {
   return (
     <div>
-      <Wrapper>
-        <Header />
-        {children}
-      </Wrapper>
+      <Header />
+      <Wrapper>{children}</Wrapper>
       <Footer />
     </div>
   )
