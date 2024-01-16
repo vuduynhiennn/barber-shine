@@ -55,7 +55,9 @@ module.exports = {
         'primary': "#15397f",
         'primary-lighter': '#a0c9eb',
         'light': "#fff",
-        'dark-100': '#f7f7f7'
+        'dark-100': '#f7f7f7',
+        'bg-main': '#F5F5F7',
+        'gray-444': '#666666'
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -78,7 +80,9 @@ module.exports = {
       },
       padding: {
         "0.5": "2px",
-        "1.5": "5px"
+        "1.5": "5px",
+        2.5: "10px",
+        "3.5": "14px"
       },
       screens: {
         // => @media (min-width: px) { ... }
@@ -89,11 +93,17 @@ module.exports = {
         'xl': '1280px',
         '2xl': '1536px',
       },
+      borderWidth: {
+        5: '6px'
+      },
       gap: {
         "7.5": "30px"
       },
       margin: {
         '2.5': '10px'
+      },
+      fontSize: {
+        "2.5": '26px'
       }
     },
   },
