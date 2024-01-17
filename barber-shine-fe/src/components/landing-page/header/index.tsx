@@ -5,10 +5,15 @@ import { Button } from '@/components/ui/button'
 import { useRouter } from 'next/router'
 import { cn } from '@/lib/utils'
 
-import BarsSortRegularIcon from '@/icons/bars-sort-regular.svg'
 import XMarkRegularIcon from '@/icons/xmark-regular.svg'
 import Logo from './Logo'
 import Wrapper from '@/layout/Wrapper'
+import dynamic from 'next/dynamic'
+
+const AuthForm = dynamic(() => import('@/features/auth'), {
+  ssr: false,
+  loading: () => <div>loading...</div>,
+})
 
 export default function Header() {
   const [isShowMenu, setIsShowMenu] = useState(false)
@@ -21,18 +26,7 @@ export default function Header() {
 
         <HeaderMenu isShowMenu={isShowMenu} toggleShowMenu={toggleShowMenu} />
 
-        <div className="flex items-center">
-          <Button
-            variant="outline"
-            className="text-primary px-3 leading-none rounded-lg border-primary hover:bg-primary hover:text-light h-6 py-0.5"
-          >
-            <Link href={'/auth/login'}>Đăng nhập</Link>
-          </Button>
-          <BarsSortRegularIcon
-            className="w-5 md:hidden cursor-pointer h-5  ml-2.5"
-            onClick={toggleShowMenu}
-          />
-        </div>
+        <AuthForm toggleShowMenu={toggleShowMenu} />
       </Wrapper>
     </div>
   )

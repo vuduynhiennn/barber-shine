@@ -31,6 +31,7 @@ export function BannersCarousel() {
               alt={el.alt}
               src={device == 'Mobile' ? el.mb : el.pc}
               className="md:rounded-2xl  h-[386px] object-cover"
+              priority
             />
           </CarouselItem>
         ))}
