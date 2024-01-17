@@ -19,6 +19,6 @@ export const HEADER_MENUS = [
   },
   {
     label: 'Hạng thành viên',
-    href: '/member/rank',
+    href: '/rank',
   },
 ]
