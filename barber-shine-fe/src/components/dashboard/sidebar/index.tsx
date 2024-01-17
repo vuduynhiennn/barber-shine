@@ -14,6 +14,8 @@ import { cn } from '@/lib/utils'
 import { useDashboardContext } from '@/context/dashboard-context'
 import { AuthStateContext } from '@/context/auth-context'
 import { MENUS, MenuItem } from './menu.config'
+import { WEB_NAME } from '@/constant/web-name'
+import ContactToDev from '@/components/landing-page/footer/ContactToDev'
 
 export default function SideBar() {
   const { dashboardState } = useDashboardContext()
@@ -97,11 +99,11 @@ export default function SideBar() {
         <div>
           <Link
             href="/"
-            className=" w-48 px-5 py-3  leading-10 uppercase bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-300 font-bold"
+            className=" w-48 px-5 py-3  leading-10 uppercase bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-lighter font-bold"
           >
-            vuasimdata.com
+            {WEB_NAME}
           </Link>
-          <SeparatorSidebar>ỨNG DỤNG VÀ CÀI ĐẶT</SeparatorSidebar>
+          <SeparatorSidebar>TRANG QUẢN LÝ </SeparatorSidebar>
           {menus.map((menu) => (
             <Fragment key={menu.key}>
               <ButtonSideBar
@@ -110,7 +112,7 @@ export default function SideBar() {
                 onClick={handleClickMenuCB(menu)}
                 className={cn(
                   activeKey == menu.key
-                    ? 'bg-gradient-to-r from-red-400 to-primary-300/80  text-light hover:bg-primary hover:text-light'
+                    ? 'bg-gradient-to-r from-primary to-primary-lighter  text-light hover:bg-primary hover:text-light'
                     : 'ghost'
                 )}
                 isOpenSubmenu={show_sub_menu_key == menu.key}
@@ -129,7 +131,7 @@ export default function SideBar() {
                       icon={<CircleIcon className="w-[10px]" />}
                       className={cn(
                         activeKey == sub_menu.key
-                          ? 'bg-gradient-to-r from-red-400 to-primary-300/80  text-light hover:bg-primary hover:text-light'
+                          ? 'bg-gradient-to-r from-primary to-primary-lighter  text-light hover:bg-primary hover:text-light'
                           : 'ghost'
                       )}
                     />
@@ -140,6 +142,9 @@ export default function SideBar() {
           ))}
         </div>
         <div className="absolute bottom-0 left-0 hidden md:block">
+          <div className="px-7">
+            Made By: <ContactToDev />
+          </div>
           <ButtonSideBar
             label={is_show_mini_sidebar ? 'Hiện' : 'Ẩn'}
             href="#"
