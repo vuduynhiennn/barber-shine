@@ -45,7 +45,9 @@ const HeaderMenu = ({
     <ul
       className={cn(
         'flex fixed px-4  h-screen md:h-0  transition-all top-0 pt-4 md:pt-0 duration-300 bg-light z-10 flex-col md:flex-row md:relative items-center gap-7.5',
-        isShowMenu ? 'right-0 w-full items-start' : '-right-48 md:right-0'
+        isShowMenu
+          ? 'right-0 w-full md:w-fit items-start md:items-center '
+          : '-right-48 md:right-0'
       )}
     >
       <div className="flex mb-1 md:hidden items-center justify-between w-full">
@@ -65,6 +67,7 @@ const HeaderMenu = ({
                 'md:border-b-2 md:pb-1 md:border-primary-lighter'
             )}
             href={el.href}
+            onClick={toggleShowMenu}
           >
             {el.label}
           </Link>
