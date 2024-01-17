@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import { Button } from '@/components/ui/button'
-import MoneyCheckDollarPen from '~/icons/fontawesome/regular/money-check-dollar-pen.svg'
+import MoneyCheckDollarPen from '@/icons/money-check-dollar-pen-regular.svg'
 import LockIcon from '@/icons/lock-regular.svg'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import LogoutIcon from '~/icons/fontawesome/regular/arrow-right-from-bracket.svg'
+import LogoutIcon from '@/icons/arrow-right-from-bracket-regular.svg'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,7 +16,9 @@ import {
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { HamburgerMenuIcon } from '@radix-ui/react-icons'
-import ArrowDownIcon from '~/icons/arrowdown2.svg'
+
+import ArrowDownIcon from '@/icons/arrow-down_.svg'
+
 import { FormatCurrentcy } from '@/utils/format-currency'
 import { AuthStateContext } from '@/context/auth-context'
 import { useDashboardContext } from '@/context/dashboard-context'
