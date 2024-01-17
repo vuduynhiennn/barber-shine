@@ -21,6 +21,7 @@ export default function ProductCard({
         alt="our servce"
         className="h-24 md:h-48 z-0 object-cover"
         src={image}
+        priority
       />
       <div className="py-2.5 z-50 pl-2.5 pr-5 md:pt-4 bg-light">
         <p className="text-primary text-base leading-tight md:text-2xl font-bold text-center md:text-start">
