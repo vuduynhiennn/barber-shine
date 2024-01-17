@@ -1,7 +1,11 @@
 import Footer from '@/components/landing-page/footer'
-import Header from '@/components/landing-page/header'
+import dynamic from 'next/dynamic'
 import React from 'react'
-import Wrapper from './Wrapper'
+
+const Header = dynamic(() => import('@/components/landing-page/header'), {
+  ssr: false,
+  loading: () => <div>loading..</div>,
+})
 
 export default function LandingLayout({
   children,
