@@ -22,18 +22,13 @@ export const MENUS: MenuItem[] = [
     key: 'banner-mannager',
     label: `Banner`,
     icon: <ImageIcon />,
-    href: '/admin-dashboard/banner',
+    href: '/dashboard/admin/banner',
   },
   {
     key: 'user-profile',
     label: 'Tài Khoản',
     icon: <UserLockIcon />,
     sub_menus: [
-      {
-        key: 'user-secure',
-        label: 'Đổi Mật Khẩu',
-        href: `/setting/change-password`,
-      },
       {
         key: 'login-history',
         label: 'Lich Sử Đăng Nhập',
@@ -42,8 +37,8 @@ export const MENUS: MenuItem[] = [
 
       {
         key: 'update-name',
-        label: 'Cập Nhật Tên',
-        href: `/setting/update`,
+        label: 'Cập Nhật Thông Tin',
+        href: `/setting/update-info`,
       },
     ],
   },
