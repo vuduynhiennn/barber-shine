@@ -1,10 +1,11 @@
 import Footer from '@/components/landing-page/footer'
+import { LoadingSpin } from '@/components/ui/loading'
 import dynamic from 'next/dynamic'
 import React from 'react'
 
 const Header = dynamic(() => import('@/components/landing-page/header'), {
   ssr: false,
-  loading: () => <div>loading..</div>,
+  loading: () => <LoadingSpin isCenterScreen />,
 })
 
 export default function LandingLayout({
