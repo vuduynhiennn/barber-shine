@@ -2,10 +2,11 @@ import React from 'react'
 import { SOCIAL_CONFIG } from './CONFIG'
 import { Slot } from '@radix-ui/react-slot'
 import Link from 'next/link'
+import { WEB_NAME } from '@/constant/web-name'
 export default function ConnectSocial() {
   return (
     <div>
-      <p className="mb-3">Tham gia cộng đồng zuka salon</p>
+      <p className="mb-3">Tham gia cộng đồng {WEB_NAME}</p>
       <div className="flex gap-4 flex-wrap">
         {SOCIAL_CONFIG.map((el) => (
           <Link

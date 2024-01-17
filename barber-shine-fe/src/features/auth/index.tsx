@@ -23,14 +23,15 @@ import {
 import BarsSortRegularIcon from '@/icons/bars-sort-regular.svg'
 import { z } from 'zod'
 import { useForm } from 'react-hook-form'
-import { signInByPhone } from '@/firebase/firebase'
+import { WEB_NAME } from '@/constant/web-name'
 
 const AuthFormSchema = z.object({
-  phoneNumber: z.string(),
-  // .regex(
-  //   new RegExp(/^(09|03|08|07|01[2|6|8|9])+([0-9]{8})\b/),
-  //   'Định dạng số điện thoại không đúng !'
-  // ),
+  phoneNumber: z
+    .string()
+    .regex(
+      new RegExp(/^(09|03|08|07|01[2|6|8|9])+([0-9]{8})\b/),
+      'Định dạng số điện thoại không đúng !'
+    ),
 })
 
 export default function AuthForm({
@@ -68,7 +69,7 @@ export default function AuthForm({
             </DialogTitle>
             <DialogDescription className="text-center text-base">
               Tích điểm sử dụng dịch vụ, nâng hạng thành viên cùng hàng ngàn ưu
-              đãi chỉ có tại Zuka Salon
+              đãi chỉ có tại {WEB_NAME}
             </DialogDescription>
           </DialogHeader>
           <div>
