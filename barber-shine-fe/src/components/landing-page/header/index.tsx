@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { HEADER_MENUS } from './MENU.conficts'
+import { HEADER_MENUS } from './MENU.config'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { useRouter } from 'next/router'
 import { cn } from '@/lib/utils'
 
@@ -9,10 +8,11 @@ import XMarkRegularIcon from '@/icons/xmark-regular.svg'
 import Logo from './Logo'
 import Wrapper from '@/layout/Wrapper'
 import dynamic from 'next/dynamic'
+import { LoadingSpin } from '@/components/ui/loading'
 
 const AuthForm = dynamic(() => import('@/features/auth'), {
   ssr: false,
-  loading: () => <div>loading...</div>,
+  loading: () => <LoadingSpin isCenterScreen />,
 })
 
 export default function Header() {

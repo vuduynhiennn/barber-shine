@@ -1,3 +1,4 @@
+import { WEB_NAME } from '@/constant/web-name'
 import FacebookIcon from '@/icons/facebook-square.svg'
 import TikTokIcon from '@/icons/tiktok.svg'
 
@@ -11,7 +12,7 @@ export const FOOTER_CONFIG = [
     href: '/day-nghe',
   },
   {
-    label: 'Địa chỉ zuka salon',
+    label: `Địa chỉ ${WEB_NAME}`,
     href: '/address',
   },
 ]

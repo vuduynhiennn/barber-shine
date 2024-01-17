@@ -22,7 +22,7 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/firebase/signin-by-phone.js", "src/firebase/firebase.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/firebase/signin-by-phone.js", "src/firebase/firebase.js", "src/context/dashboard-context.tss"],
   "exclude": ["node_modules"],
   
 }

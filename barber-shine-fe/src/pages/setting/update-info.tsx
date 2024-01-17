@@ -1,19 +1,18 @@
+import DashboardLayout from '@/components/dashboard/dashboard-layout'
 import DevelopingWarn from '@/components/ui/developing'
-import { WEB_NAME } from '@/constant/web-name'
 import LandingLayout from '@/layout/LandingLayout'
 import Wrapper from '@/layout/Wrapper'
 import React, { ReactElement } from 'react'
 
-export default function AboutPage() {
+export default function UpdateInfoPage() {
   return (
-    <div>
-      Giới thiệu {WEB_NAME}
-      <DevelopingWarn />
-    </div>
+    <DashboardLayout>
+      UpdateInfoPage <DevelopingWarn />
+    </DashboardLayout>
   )
 }
 
-AboutPage.getLayout = function getLayout(page: ReactElement) {
+UpdateInfoPage.getLayout = function getLayout(page: ReactElement) {
   return (
     <LandingLayout>
       <Wrapper className="md:py-3.5">{page}</Wrapper>

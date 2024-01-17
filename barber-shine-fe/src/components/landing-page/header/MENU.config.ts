@@ -1,14 +1,16 @@
+import { WEB_NAME } from '@/constant/web-name'
+
 export const HEADER_MENUS = [
   {
     label: 'Trang chủ',
     href: '/',
   },
   {
-    label: 'Về Zuka salon',
+    label: `Về ${WEB_NAME}`,
     href: '/about',
   },
   {
-    label: 'Địa chỉ Zuka salon',
+    label: `Địa chỉ ${WEB_NAME}`,
     href: '/address',
   },
   {
@@ -17,6 +19,6 @@ export const HEADER_MENUS = [
   },
   {
     label: 'Hạng thành viên',
-    href: '/member/rank',
+    href: '/rank',
   },
 ]
