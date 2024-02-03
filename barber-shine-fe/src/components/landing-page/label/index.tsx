@@ -23,3 +23,15 @@ export default function CategoryLabel({
     </>
   )
 }
+
+export const DescriptionForLabel = ({
+  children,
+}: {
+  children: React.ReactNode
+}) => {
+  return (
+    <p className="text-primary text-sm md:text-base pt-1 md:pt-2.5">
+      {children}
+    </p>
+  )
+}
