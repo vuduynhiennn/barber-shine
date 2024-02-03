@@ -58,7 +58,8 @@ module.exports = {
         'dark-100': '#f7f7f7',
         'bg-main': '#F5F5F7',
         'gray-444': '#666666',
-        "text-gray-999": "#000000D9"
+        "text-gray-999": "#000000D9",
+        "text-gray-998": "#111111",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -98,6 +99,7 @@ module.exports = {
         5: '6px'
       },
       gap: {
+        '4.5': "18px",
         "7.5": "30px"
       },
       margin: {
