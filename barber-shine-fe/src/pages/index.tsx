@@ -1,6 +1,7 @@
 import { BannersCarousel } from '@/features/banner-carousel'
 import CategoryProducts from '@/features/category-products'
 import { TEMP_PROD } from '@/features/category-products/temp.prod'
+import Commit from '@/features/commit/components'
 import Order from '@/features/order'
 import UserRate from '@/features/user-rate'
 import LandingLayout from '@/layout/LandingLayout'
@@ -23,6 +24,7 @@ export default function index() {
           <div className=" md:w-4/5 m-auto my-8 space-y-8">
             <CategoryProducts data={TEMP_PROD} label="Dịch vụ tóc" />
             <CategoryProducts data={TEMP_PROD} label="Spa & relax" />
+            <Commit />
           </div>
         </Wrapper>
       </div>

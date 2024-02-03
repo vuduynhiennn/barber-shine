@@ -30,7 +30,7 @@ export function BannersCarousel() {
             <Image
               alt={el.alt}
               src={device == 'Mobile' ? el.mb : el.pc}
-              className="md:rounded-2xl  h-[386px] object-cover"
+              className="md:rounded-2xl h-[386px] object-cover"
               priority
             />
           </CarouselItem>
