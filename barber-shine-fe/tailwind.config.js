@@ -51,6 +51,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'banner-bg': " rgb(21,57,127)",
         'dark-300': "#262626",
         'primary': "#15397f",
         'primary-lighter': '#a0c9eb',
@@ -75,6 +76,9 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+      },
+      backgroundImage: {
+        'banner-bottom-gradient': "linear-gradient(0deg, rgba(21,57,127,0.9234287464985994) 20%, rgba(21,60,127,0.3744091386554622) 43%, rgba(21,60,127,0) 53%)"
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
