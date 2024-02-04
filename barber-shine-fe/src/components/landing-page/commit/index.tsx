@@ -34,14 +34,14 @@ const COMMITS: {
 export default function Commit() {
   return (
     <div>
-      <CategoryLabel>{`cam kết ${WEB_NAME} care`}</CategoryLabel>
+      <CategoryLabel className="mb-1">{`cam kết ${WEB_NAME} care`}</CategoryLabel>
       <DescriptionForLabel>
         {`Sự hài lòng của anh là ưu tiên hàng đầu của ${WEB_NAME}`}
       </DescriptionForLabel>
 
       <Banner src="/static/banner1.jpg" alt="our commit" className="mt-4" />
 
-      <div className="flex justify-around divide-x divide-[#D9D9D9] py-5">
+      <div className="flex justify-around divide-x divide-[#D9D9D9] my-5">
         {COMMITS.map((el) => (
           <div key={el._id} className="flex-1">
             <p className="text-5xl text-center text-primary font-bold">

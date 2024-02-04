@@ -13,7 +13,7 @@ export default function CategoryLabel({
       {typeof children == 'string' && (
         <p
           className={cn(
-            '[*&]:text-primary text-2.5 font-bold uppercase pl-2 border-primary-lighter border-l-5 h-fit leading-none',
+            '[*&]:text-primary text-2.5 font-bold uppercase pl-2 border-primary-lighter border-l-5 h-fit leading-none mb-2',
             className
           )}
         >

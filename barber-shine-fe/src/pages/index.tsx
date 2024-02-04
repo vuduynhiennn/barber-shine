@@ -1,3 +1,4 @@
+import SpaceAndTech from '@/components/landing-page/space-and-tech'
 import { BannersCarousel } from '@/features/banner-carousel'
 import CategoryProducts from '@/features/category-products'
 import { TEMP_PROD } from '@/features/category-products/temp.prod'
@@ -24,6 +25,7 @@ export default function index() {
           <div className=" md:w-4/5 m-auto my-8 space-y-8">
             <CategoryProducts data={TEMP_PROD} label="Dịch vụ tóc" />
             <CategoryProducts data={TEMP_PROD} label="Spa & relax" />
+            <SpaceAndTech />
             <Commit />
           </div>
         </Wrapper>
